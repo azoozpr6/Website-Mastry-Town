@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Changa', sans-serif;
+    scroll-behavior: smooth;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    cursor: crosshair;
+    background-color: black;
+    color: #ffff;
+}
+body::-webkit-scrollbar {
+    width: 0.5em;
+   
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 93, 6);
+    outline: 1px solid rgb(200, 131, 3);
+    border-radius: 100px;
+  }
+
+
+.continer-navber{
+    
+   
+    display: flex;
+    width: 100%;
+    height: 8pc;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    display: flex;
+    direction: ltr;
+    gap: 30px;
+}
+ul li{
+    font-size: large;
+
+    list-style: none;
+    padding: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+ul li:hover {
+    color: #FD5000;
+}
+
+.continer-hero{
+    background-attachment: fixed;
+    background-image: url(https://www.mtrp.gg/assets2/img/bg/bg2.png);
+    background-color: rgb(70, 71, 70);
+    height: 72%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo-hero-text{
+    font-size: 90px;
+    font-family: 'Bungee Spice';
+}
+
+.signin-button-2 {
+    padding: 17px 85px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.6s ease;
+    margin-top: 35px;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  .signin-button-2:hover {
+    letter-spacing: 3px;
+    background-color: #FD5000;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(92, 91, 94) 0px 7px 29px 0px;
+  }
+  
+.signin-button-2:active {
+    letter-spacing: 3px;
+    background-color: #FD5000;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(94, 90, 100) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+
+
+
+/* a test */
+.fancy {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+   }
+   
+   .fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+   }
+   
+   .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffff;
+   }
+   
+   .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy:hover {
+    color: white;
+    background: black;
+   }
+   
+   .fancy:hover::before {
+    width: 0.9375rem;
+    background: white;
+   }
+   
+   .fancy:hover .text {
+    color: #F96513;
+    padding-left: 1.5em;
+   }
+   
+   .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+   }
+   
+   .fancy:hover .bottom-key-1,
+    .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+   }
+
+/* ABOUT SERVER */
+.continer-about{
+    direction: rtl;
+    display: flex;
+    align-items: center;
+   
+    height: 600px;
+    background-color: #10131C;
+    justify-content: space-between;
+ 
+}
+.continer-about-1-about-text{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.continer-about-1-about-text-1{
+
+    height: 200px;
+}
+.continer-about-1-about-text-logo{
+    font-size: 45px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.continer-about-1-about-text-p-about{
+    margin-top: 10px;
+  
+    width: 900px;
+    font-size: 21px;
+    margin-right: 10px;
+}
+
+.continer-about-1-numbers-flowerrs{
+    display: flex;
+    height: 136px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+
+}
+.continer-about-1-numbers-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding: 50px;
+}
+.continer-about-1-about-text-p{
+    font-size: 20px;
+}
+.continer-about-1-numbers-cards-logo-text{
+
+    font-size: 35px;
+
+}
+.continer-logo-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin-left: 10%;
+
+}
+
+/* Cards  */
+.continer-admins{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    gap: 25px;
+    background-color: #090e19;
+
+    align-items: center;
+}
+.continer-admins-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #10131C;
+    transition: 0.5s;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.continer-admins-img{
+    /* border-radius: 100px; */
+    width: 250px;
+    border-radius: 30px;
+}
+.continer-admin-text{
+    font-size: 50px;
+}
+.continer-admin-p{
+    color: #F96513;
+    font-size: 30px;
+}
+.continer-admins-card:hover{
+    background-color: #F96513;
+   padding: 25px;
+
+}
+.continer-admins-card:hover .continer-admin-p{
+    color: #fff;
+}
+
+
+  
+ 
+  .continer-admins-cards{
+    display: flex;
+    gap:80px;
+  }
+
+
+
+
+
+  

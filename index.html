@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="continer-navber">
+        <img src="https://www.mtrp.gg/assets2/img/logo/logo.png" alt="" class="image-logo-navber" width="80px">
+        <ul>
+            <li>الصفحة الرئيسية</li>
+            <li class="about-button" onclick="aboutbutton()">من نحن</li>
+        </ul>
+        <!-- <a href="#" class="signin-button">تسجيل دخول</a> -->
+
+        <a class="fancy" onclick="authenticate()">
+            <span class="top-key"></span>
+            <span class="text" >تسجيل دخول</span>
+            <span class="bottom-key-1" ></span>
+            <span class="bottom-key-2"></span>
+        </a>
+    </div>
+    <div class="continer-hero">
+        <!-- <h1 class="logo-hero-text">
+            PR-GK
+        </h1> -->
+        <img src="./text-1704833184719.png" alt="">
+        <a href="https://cfx.re/join/ag87m5" class="signin-button-2">دخول السيرفر</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="continer-about">
+        <div class="continer-about-1-about-text">
+
+            <div class="continer-about-1-about-text-1">
+                <h1 class="continer-about-1-about-text-logo">من نحن ؟</h1>
+                <p class="continer-about-1-about-text-p-about">نحن نبحث عن الجودة التي تليق باللاعب وصانع المحتوى ، نحن
+                    نعمل
+                    منذ
+                    عام 2019 ولدينا الخبرة الادارية والبرمجية، ايضاً نهدف الى البحث على تطوير جودة اللعب ، يوجد لدينا
+                    دعم
+                    فني على مدار 24/7 ونسعى دوماً لخدمتكم.</p>
+            </div>
+
+            <div class="continer-about-1-numbers-flowerrs">
+
+
+                <div class="continer-about-1-numbers-cards">
+                    <h3 class="continer-about-1-numbers-cards-logo-text">70K +</h3>
+                    <p class="continer-about-1-about-text-p">لاعب</p>
+                </div>
+
+
+                <div class="continer-about-1-numbers-cards">
+                    <h3 class="continer-about-1-numbers-cards-logo-text">40 +</h3>
+                    <p class="continer-about-1-about-text-p">إداري</p>
+                </div>
+
+
+                <div class="continer-about-1-numbers-cards">
+                    <h3 class="continer-about-1-numbers-cards-logo-text">50 +</h3>
+                    <p class="continer-about-1-about-text-p">صانع محتوى </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="continer-logo-about">
+            <img src="https://www.mtrp.gg/assets2/img/logo/logo.png" alt="" style="margin-bottom: 20px;" width="150px">
+            <h4 style="font-size: 30px;">MTRP</h4>
+            <p style="font-size: 35px;">القسم التقني </p>
+
+
+        </div>
+    </div>
+
+
+    <div class="continer-admins">
+
+        <h1 class="continer-admins-logo-text">مؤسسين</h1>
+
+
+
+        <div class="continer-admins-cards">
+            <div class="continer-admins-card" onclick="window.open('https://discord.gg/SVfqz7Aqer')">
+                <img src="https://cdn.discordapp.com/attachments/1139841080200798242/1189634616592703638/STORE.png?ex=65a81b12&is=6595a612&hm=68d8238f968289b89cdbf062b892e71edb78fae2358c17af17285a46d171f99a&" alt="" class="continer-admins-img" width="10px">
+                <h3 class="continer-admin-text">PRX</h3>
+                <h5 class="continer-admin-p">مالك</h5>
+            </div>
+
+            <div class="continer-admins-card" onclick="window.open('https://discord.gg/kbj9fEGzyk')">
+                <img src="https://cdn.discordapp.com/attachments/1193793112141738024/1194386132327202816/2023-12-25_223046.png?ex=65b029c4&is=659db4c4&hm=028ba9246a8d4ac38a46324b9a92682df88e00984bf9ce705c7ea6e4b72da54c&" alt="" class="continer-admins-img" width="200px">
+                <h3 class="continer-admin-text">GK</h3>
+                <h5 class="continer-admin-p">مالك</h5>
+            </div>
+
+            
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+<footer style="height: 50px; font-size: 25px; margin-right: 20px;" dir="rtl"> حقوق النشر @ 2024 للمبرمج <span style="color: #FD5000;" onclick="window.open('https://discord.gg/QuZtmzHD6Z')">PRX</footer>
+
+
+
+
+
+
+
+    <script>
+
+function authenticate() {
+      const clientId = '1194550397369593959'; // Replace with your Discord application's client ID
+      const redirectUri = 'http://localhost:5500/logged'; // Replace with your redirect URI
+      const scope = 'identify'; // Specify the required scope(s) for your application
+
+      const authUrl = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=token&scope=${encodeURIComponent(scope)}`;
+
+      window.location.href = `https://discord.com/api/oauth2/authorize?client_id=1194550397369593959&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A5500%2Flogged.html&scope=identify`;
+    }
+
+    function handleAuthentication() {
+      const hash = window.location.hash.substring(1);
+      const params = new URLSearchParams(hash);
+
+      if (params.has('access_token')) {
+        const accessToken = params.get('access_token');
+        console.log('Access Token:', accessToken);
+      } else if (params.has('error')) {
+        const error = params.get('error');
+        console.error('Authentication Error:', error);
+      }
+    }
+
+    handleAuthentication();
+        function aboutbutton() {
+            document.documentElement.scrollTop = 463;
+        }
+    </script>
+</body>
+
+</html>
